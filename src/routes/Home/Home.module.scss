@@ -1,0 +1,48 @@
+.root {
+	height: 100vh;
+	width: 100vw;
+
+	box-sizing: border-box;
+	padding: 6rem;
+
+	.container {
+		width: 100%;
+		height: 100%;
+
+		display: flex;
+
+		.welcome {
+			width: 60%;
+		}
+
+		.highlight {
+
+			width: 40%;
+
+			display: grid;
+			grid-template-columns: [left] 1fr [center-left] auto [center-right] 1fr [right];
+			grid-template-rows: [top] 1fr [center-top] auto [center-bottom] 1fr [bottom];
+
+			* {
+				grid-row-start: center-top;
+				grid-column-start: center-left;
+			}
+
+			.description {
+				grid-row-start: top;
+				align-self: end;
+
+				padding-bottom: 1rem;
+			}
+
+			.name {
+				grid-row-start: center-bottom;
+				align-self: start;
+
+				text-align: center;
+
+				padding-top: 0.75rem;
+			}
+		}
+	}
+}

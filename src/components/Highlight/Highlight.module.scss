@@ -1,0 +1,17 @@
+@use '/src/styles/colors.scss';
+
+.root {
+	box-sizing: border-box;
+
+	width: 20rem;
+	height: 20rem;
+
+	border-radius: 1rem;
+	border: 0.25rem solid colors.$gold;
+
+	background-color: colors.$not-so-black;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

@@ -1,0 +1,62 @@
+@use './colors';
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Arvo', 'Ubuntu', serif;
+
+	background-color: colors.$black;
+	color: colors.$sky;
+}
+
+h1, h2, h3, h4 { margin: 0 }
+
+// MEGA
+h1 {
+	font-size: 6rem;
+	line-height: 8rem;
+	
+	color: colors.$gold;
+}
+
+// Big text
+h2 {
+	font-size: 3rem;
+	line-height: 4rem;
+
+	color: colors.$sky;
+}
+
+h3 {
+	font-size: 1.5rem;
+	line-height: 2rem;
+
+	color: colors.$sky;
+}
+
+h4 {
+	font-size: 1rem;
+	line-height: 1.5rem;
+
+	font-style: italic;
+	font-weight: normal;
+}
+
+a {
+	font-size: 1.5rem;
+	line-height: 2rem;
+
+	color: colors.$gold;
+
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
